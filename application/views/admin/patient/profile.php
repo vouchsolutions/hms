@@ -30,6 +30,7 @@ $genderList = $this->customlib->getGender();
                         }
                         ?>        
                         <img class="profile-user-img img-responsive img-circle" src="<?php echo base_url() . $file ?>" alt="User profile picture">
+                        <img class="profile-user-img img-responsive" src="<?php echo base_url() .'barcode?text='.$result['patient_unique_id'] ?>" alt="User profile picture">
                         <h3 class="profile-username text-center"><?php echo $result['patient_name']; ?></h3> 
                         <div class="editviewdelete-icon pt8 text-center">
                             <?php if ($this->rbac->hasPrivilege('opd_patient', 'can_edit')) { ?>

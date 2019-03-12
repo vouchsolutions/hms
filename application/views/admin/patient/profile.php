@@ -812,8 +812,10 @@ if ($this->rbac->hasPrivilege('revisit', 'can_delete')) {
                                 <tr>
                                     <th width="15%"><?php echo $this->lang->line('note'); ?></th>
                                     <td width="35%"><span id='note'></span></td>
-
-
+                                </tr>
+                                <tr>
+                                    <th width="15%">Bar Code</th>
+                                    <td width="35%"><img class="profile-user-img img-responsive" src="<?php echo base_url() .'barcode?text='.$result['patient_unique_id'] ?>" alt="User profile picture"></td>
                                 </tr>
 
                             </table>
